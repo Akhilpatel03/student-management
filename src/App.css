@@ -1,0 +1,152 @@
+/* General App Styles */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid rgba(17, 0, 255, 0.904);
+  background-color: papayawhip;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 1px solid blue;
+  background-color: gold;
+  padding: 10px;
+  border-radius: 6px;
+}
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  background: rgba(255, 4, 0, 0.925);
+  color: white;
+  border-radius: 5px;
+}
+nav a:hover {
+  background: rgba(0, 30, 179, 0.965);
+}
+.studentlist {
+  width: 100%;
+}
+.searchinput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid rgba(221, 221, 221, 0.957);
+  text-align: left;
+}
+.deletebtn {
+  background-color: rgb(255, 77, 79);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.deletebtn:hover {
+  background-color: rgb(230, 46, 46);
+}
+.editbtn {
+  background-color: rgb(76, 175, 80);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.editbtn:hover {
+  background-color: rgb(59, 143, 62);
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paginationbtn {
+  padding: 10px;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.paginationbtn:disabled {
+  background-color: rgb(204, 204, 204);
+  cursor: not-allowed;
+}
+.paginationbtn:hover:not(:disabled) {
+  background-color: rgb(0, 86, 179);
+}
+.studentform {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(249, 249, 249);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.studentform h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+.formgroup {
+  margin-bottom: 15px;
+}
+.formgroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.formgroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+.submitbtn {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.submitbtn:hover {
+  background-color: rgb(0, 86, 179);
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .table th, .table td {
+    font-size: 14px;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+
+  .paginationbtn {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+}
